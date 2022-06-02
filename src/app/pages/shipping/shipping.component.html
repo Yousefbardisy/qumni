@@ -1,0 +1,162 @@
+<!-- start shipping -->
+<div class="shipping">
+  <div class="container">
+    <div class="content-steps">
+      <ul class="progress-timeline">
+        <li class="active">الشحـــن</li>
+        <li>الدفـــــع</li>
+        <li>تــــم</li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-7 shadow-sm">
+        <h2 class="text-nowrap">شحن الى عنوانى</h2>
+        <form action="#" class="d-flex">
+          <div class="shipping-radio">
+             
+            <input
+              type="radio"
+              id="adrress"
+              name="addresses"
+              value="check-address"
+            />
+          </div>
+          <div class="shipping-radio-label">
+             
+            <label for="html"
+              >الشرقية - بلبيس - شارع 21 - صبحي فهمي - عمارة: 123 - ط الرقم: 1 -
+              شقة رقم 7 التفاصيل: 21 ش صبحى فهمى ارض الجولف</label
+            >
+          </div>
+        </form>
+
+        <div class="button-new-address mt-2 mb-2">
+          <button
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal-6"
+          >
+            عنوان جديد
+          </button>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5 shadow-sm secondPart">
+        <h4 class="text-upperacse">عربة التسوق الخاصة بي</h4>
+        <div class="box-shipping-product">
+          <div class="row">
+            <div class="col-4 col-md-4">
+              <img
+                src="./images/categoriesImages/cat1.jpg"
+                class="img-responsive"
+                alt="image shipping"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-8 col-md-8">
+              <p class="name-mobile m-0 p-0">برجر</p>
+              <p class="text">بيج تيستى يقدم مع بطاطس والكولا</p>
+              <p class="price-swiper m-0 p-0 fw-bold">100.00 جنيه</p>
+
+              <div class="item-shipping d-flex justify-content-between mt-3">
+                <p class="text-dark">الكمية:</p>
+                <p class="text-dark">1</p>
+              </div>
+
+              <div class="shipping-price d-flex justify-content-between">
+                <p class="text-dark">الشحن:</p>
+                <p class="text-dark fw-bold">50.00 جنيه</p>
+              </div>
+
+              <div class="grand-total d-flex justify-content-between">
+                <p class="text-dark">المجموع الكلى:</p>
+                <p class="text-dark text-nowrap fw-bold">150.00 جنيه</p>
+              </div>
+              <a routerLink="/payment">
+                <button class="btn mb-2 mx-auto d-block w-100">استمرار</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end shipping -->
+
+<div
+  class="modal fade"
+  id="exampleModal-6"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">أضافة عنوان جديد</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <label for="city">المدينة:</label>
+          <select class="select-this">
+            <option value="" selected hidden>--اختار مدينتك--</option>
+            <option value="Cairo">القاهرة</option>
+            <option value="Alexandria">الاسكندرية</option>
+            <option value="Port Saied">بورسعيد</option>
+          </select>
+
+          <div id="area-select" style="display: none">
+            <label for="city">المنطقة:</label>
+            <select name="select-place">
+              <option value="">سيدى جابر</option>
+              <option value="">مدنية نصر</option>
+            </select>
+          </div>
+
+          <label for="building">عنوان اضافى(أختيارى):</label>
+          <input type="text" />
+
+          <label for="street">الشارع:</label>
+          <input type="text" />
+
+          <label for="street">العمارة:</label>
+          <input type="text" />
+
+          <div class="row">
+            <div class="col-6">
+              <label for="floor number">الدور:</label>
+              <input type="text" />
+            </div>
+            <div class="col-6">
+              <label for="floor number">الشقة:</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <label for="Address Details">أضافة اتجاهات اخري:</label>
+          <input type="text" name="" />
+
+          <label for="Address Details"> رقم هاتف (أساسى):</label>
+          <input type="number" name="" />
+
+          <label for="Address Details"> رقم هاتف (أختيارى):</label>
+          <input type="number" name="" />
+
+          <label for="Address Details"> علامة مميزة (اختيارى):</label>
+          <input type="text" name="" />
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn w-100">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
